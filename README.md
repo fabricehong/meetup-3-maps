@@ -1,4 +1,4 @@
-#Consignes d'installation et de configuration
+# Consignes d'installation et de configuration
 
 ## IOS
 Après installation, se positionner dans le répertoire ios
