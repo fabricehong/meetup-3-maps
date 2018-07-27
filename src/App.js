@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Header from './components/Header'
+import Map from './components/Map';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-        <Text>Hello from Julien</Text>
-      </div>
+      <View style={styles.mainView}>
+        <Header headerText="Meetup 3 maps"/>
+        <Map />
+      </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  mainView: {
+    flex: 1
+  }
+});
+
+export default App;
