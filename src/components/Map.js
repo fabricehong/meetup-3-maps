@@ -38,16 +38,27 @@ class Map extends React.Component {
   }
 
   onMapPress(e) {
-    this.setState({
-      markers: [
-        ...this.state.markers,
-        {
-          coordinate: e.nativeEvent.coordinate,
-          key: id++,
-          color: randomColor(),
-        },
-      ],
+
+    var mark = this.state.markers;
+
+    mark.push({
+        coordinate: e.nativeEvent.coordinate,
+        key: id++,
+        color: randomColor(),
     });
+
+    this.setState({markers: mark})
+
+    // this.setState({
+    //   markers: [
+    //     ...this.state.markers,
+    //     {
+    //       coordinate: e.nativeEvent.coordinate,
+    //       key: id++,
+    //       color: randomColor(),
+    //     },
+    //   ],
+    // });
   }
 
   render() {
