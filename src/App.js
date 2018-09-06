@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.mainView}>
-        <Header headerText="Meetup 3 maps"/>
+        {/*<Header headerText="Meetup 3 maps"/>*/}
         <Map />
       </View>
     )
